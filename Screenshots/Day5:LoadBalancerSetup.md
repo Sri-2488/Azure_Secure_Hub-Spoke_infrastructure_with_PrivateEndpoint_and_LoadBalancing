@@ -1,4 +1,4 @@
-# Configured the Load Balancer in the network.
+# Day 5: Configured the Load Balancer in the network.
 Installed the web server in vm1
 <img width="859" height="522" alt="1" src="https://github.com/user-attachments/assets/209cd6cb-3ec2-4435-9074-f75080e704a4" />
 
