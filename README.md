@@ -1,18 +1,20 @@
 # Azure_Secure_Hub-Spoke_infrastructure_with_PrivateEndpoint_and_LoadBalancing
-Designed a Hub-Spoke network architecture by implementing internet access with NSG rules, Bastion and Azure Firewall. Configured Load balancing for high availability of VMs and enabled the private connectivity for Azure Storage service using Azure CLI.
+Designed a Hub-Spoke network is a multi-layer architecture by implementing internet access with NSG rules, Bastion and Azure Firewall. Configured Load balancing for high availability of VMs and enabled the private connectivity for Azure Storage service using private endpoint.
+Automated Deployment using Azure CLI scripts for all components including networking, security, load balancing and private endpoint configuration.
 
 # Architecture Components
  * Hub Vnet (10.0.0.0/16) 
     - Azure Firewall (Centralized traffic Control) - 10.0.1.0/24
     - Azure Bastion (Private Access for VM) - 10.0.2.0/24
  * Spoke1 Vnet (10.2.0.0/16)
-    - Web Subnet (Deployed Vms) - 10.2.1.0/24
+    - Web_subnet (Deployed Vms) - 10.2.1.0/24
  * Spoke2 Vnet (10.3.0.0/16)
-    - Private Subnet (Private Endpoint + Storage) - 10.3.1.0/16
+    - Private_subnet (Private Endpoint + Storage) - 10.3.1.0/16
 
 # Network Design 
 
-<img width="272" height="295" alt="image" src="https://github.com/user-attachments/assets/1d37ad75-c556-407d-abb3-b8762c7456b6" />
+<img width="841" height="831" alt="architecture_diagram" src="https://github.com/user-attachments/assets/05909528-ec66-4308-b4d7-7af38157e69e" />
+
 
 
 # Connectivity using VNet Peering
@@ -98,14 +100,14 @@ VM2:
 
 # Screenshots
 
-Screenshots available in /Screenshots.
+Screenshots available in /Screenshots directory.
 - Vnet Configuration
 - NSG Rules
 - Bastion Connection
 - Firewall Setup
 - Load Balancer
 - Private Endpoint + Storage Service
-
+  
 # Tools Used 
 
 - Azure CLI
