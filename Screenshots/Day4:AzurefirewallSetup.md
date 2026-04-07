@@ -1,3 +1,6 @@
+
+# Day 4: Configured and Tested Azure Firewall in the Network.
+
 Enabled Network Firewall rule in webvm1
 <img width="850" height="501" alt="48" src="https://github.com/user-attachments/assets/2a81525a-75ab-40c3-a862-10ae0c5ef1c4" />
 
