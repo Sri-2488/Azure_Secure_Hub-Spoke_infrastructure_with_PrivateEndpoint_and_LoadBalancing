@@ -1,5 +1,5 @@
 # Azure_Secure_Hub-Spoke_infrastructure_with_PrivateEndpoint_and_LoadBalancing
-Designed a Hub-Spoke network is a multi-layer architecture by implementing internet access with NSG rules, Bastion and Azure Firewall. Configured Load balancing for high availability of VMs and enabled the private connectivity for Azure Storage service using private endpoint.
+Designed a multi-layer Hub-Spoke network architecture by implementing internet access with NSG rules, Bastion and Azure Firewall. Configured Load balancing for high availability of VMs and enabled the private connectivity for Azure Storage service using private endpoint.
 Automated Deployment using Azure CLI scripts for all components including networking, security, load balancing and private endpoint configuration.
 
 # Architecture Components
@@ -32,7 +32,7 @@ This enables secure communication between VNets without exposing network to publ
 - Allowed port HTTP(80) for web traffic and Azure Load Balancer probes.
 
 <b2> Azure Firewall </b2>
-- Azure Firewall is deployed to route all the outband traffic in the network through a firewall by configuring USer Definied Routes(UDR).
+- Azure Firewall is deployed to route all the outband traffic in the network through a firewall by configuring User Definied Routes(UDR).
 - Created the firewall network rule to allow the ports 80 and 443 to access https://google.com in the vms browser, got the desired output.
 - It controlls Internet access centrally. 
 
